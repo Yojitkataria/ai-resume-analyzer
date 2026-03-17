@@ -16,5 +16,11 @@ router.post(
   validateAnalyzeRequest,
   analyzeResume,
 );
+router.post(
+  "/resume/analyze",
+  upload.single("resume"),
+  validateAnalyzeRequest,
+  analyzeResume,
+);
 
 module.exports = router;
