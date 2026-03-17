@@ -1,0 +1,34 @@
+{
+  "name": "resume-analyzer",
+  "version": "1.0.0",
+  "description": "First project using AI-assisted development",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "start": "npm run start --prefix server",
+    "build": "npm run build --prefix client",
+    "format": "prettier --write \"**/*.{js,jsx,json,md,css}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,json,md,css}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yojitkataria/ai-resume-analyzer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Yojitkataria/ai-resume-analyzer/issues"
+  },
+  "homepage": "https://github.com/Yojitkataria/ai-resume-analyzer#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "prettier": "^3.8.1"
+  },
+  "dependencies": {
+    "multer": "^2.1.1",
+    "pdf-parse": "^2.4.5"
+  }
+}
